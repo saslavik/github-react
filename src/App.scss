@@ -1,3 +1,4 @@
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -10,6 +11,7 @@
 }
 
 .App-header {
+  margin-top: 65px;
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -31,4 +33,79 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+svg {
+  color: #e4e4e4;
+}
+/* Search */
+.wrapper__search {
+  position: relative;
+}
+.search {
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+}
+.search-icon {
+  height: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  align-items: center;
+  display: flex;
+}
+input {
+  padding: 16px 16px 16px 56px !important;
+  margin-bottom: 0px;
+  border-radius: 30px;
+  color: #909399;
+  font-size: 16px;
+  min-width: 400px;
+  height: auto;
+}
+.user__wrapper {
+  margin: 20px 0;
+  width: 400px;
+  .user-info {
+    display: flex;
+  }
+  img {
+    width: 80px;
+    margin-right: 20px;
+  }
+}
+.repos__wrapper {
+  width: 400px;
+  margin: 30px 0;
+  .sort {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    span {
+      cursor: pointer;
+    }
+  }
+}
+.repos-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #dbdbdb;
+}
+button {
+  margin-top: 20px;
+  &.btnDisabled {
+    cursor: default;
+    opacity: .6;
+  }
+}
+.button-line {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 15px 0;
 }
